@@ -1,0 +1,34 @@
+// Take array from user and reverse each element but use function
+
+import java.io.*;
+class Reverse1{
+
+		static int reverse(int x){
+			int s=0;
+			while(x!=0){
+				int rem=x%10;
+				s=s*10+rem;
+				x=x/10;
+			}
+			return s;
+		}
+	
+
+	public static void main(String args[])throws IOException{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter array size");
+		int size=Integer.parseInt(br.readLine());
+
+		int arr[]=new int[size];
+		System.out.println("enter array elemeent");
+		
+		for(int i=0;i<arr.length;i++){
+			arr[i]=Integer.parseInt(br.readLine());
+			arr[i]=reverse(arr[i]);
+		}
+		System.out.println("array after reversing");
+		for(int i=0;i<arr.length;i++){
+o			System.out.println(arr[i]+"  ");
+		}
+}
+}
