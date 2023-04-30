@@ -1,3 +1,5 @@
+// Take array size from user and display jagged array.
+
 import java.io.*;
 class Jagged3{
 	public static void main(String []args)throws IOException{
