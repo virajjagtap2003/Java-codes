@@ -12,25 +12,23 @@ class SecondMin{
 		for(int i=0;i<arr.length;i++){
 			arr[i]=Integer.parseInt(br.readLine());
 
-		}}
-		int min=arr[0];
-		int smin=arr[0];
-		for(int i=1;i<arr.length;i++){
-			if(min>arr[i]){
-				min=arr[i];
-			}
-		
-		
-		}
-		for(int j=1;j<arr.length;j++){
-			if(smin>arr[j] && arr[j]!=min){
-				smin=arr[j];
-			}
 		}
 	
-		System.out.println("First Minimum="+min);
-		System.out.println("Second Minimum="+smin);
+		int m=arr[0];
+		int m2=arr[1];
+		for(int i=0;i<arr.length;i++){
+			if(arr[i]<m){
+				m2=m;
+				m=arr[i];
+			}else{
+				if(m>arr[i]){
+					m2=arr[i];
+				}
+			}
+		}
+		System.out.println("Second Minimum="+m2);
 		
 
 	}
 }
+
