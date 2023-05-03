@@ -14,16 +14,6 @@ class SecondLargest {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 
-		int max = arr[0];
-		int max1 = 0;
-		for (int i = 1; i < arr.length; i++) {
-
-			if (max < arr[i]) {
-				max1 = max;
-				max = arr[i];
-
-			}
-		}
-		System.out.println("second max=" + max1);
+		
 	}
 }
