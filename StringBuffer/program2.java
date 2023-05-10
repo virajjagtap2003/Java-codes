@@ -9,12 +9,12 @@ class BufferDemo{
 
 		System.out.println(str1.capacity());
 
-		str1.append("Core");// size is greater than21 so it is 2*21+2=44
+		str1.append("Core");// size is greater than21 so it is current capacity 21+1*2=44
 
 		System.out.println(str1.capacity());
 		str1.append("Web");// 27 is less than 44 so size is 44
 
-		System.out.println(str1.capacity()); // when capacity is greater than 44 it will be 44*2+2
+		System.out.println(str1.capacity()); // when capacity is greater than 44 it will be 44+1*2
 
 	}
 }
