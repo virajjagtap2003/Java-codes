@@ -7,7 +7,7 @@ class ReverseDemo{
 		System.out.println("Enter String");
 		String str=br.readLine();
 
-//		str.reverse();// error cannot find symbol
+//		str.reverse();// error cannot find symbol  (string class  not contain reverse method)
 		StringBuffer str1=new StringBuffer(str);
 		System.out.println(str1.reverse());     // Return type StringBuffer
 
