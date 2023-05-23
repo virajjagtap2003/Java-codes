@@ -4,12 +4,17 @@ class NonRepeatingDemo{
         public static void main(String[] args){
                 String str="core2web";
                 char arr[]=str.toCharArray();
+		int count=0;
                 for(int i=0;i<arr.length;i++){
+			count=0;
                         for(int j=0;j<arr.length;j++){
                                 if(arr[i]==arr[j]){
-                                        System.out.println(arr[i]);
+                                        count++;
                                 }
                         }
+			if(count==1){
+				System.out.println(arr[i]);
+			}
                 }
         }
 }
