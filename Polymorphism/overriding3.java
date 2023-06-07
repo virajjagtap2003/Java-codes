@@ -2,7 +2,7 @@ class Parent{
         Parent(){
                 System.out.println("In parent constructor");
         }
-        void fun(int x){
+        void fun(){
 
                 System.out.println("In parent fun");
         }
@@ -12,7 +12,7 @@ class Child extends Parent{
 
                 System.out.println("In child constructor");
         }
-        void fun(){
+        void fun(int x){
 
                 System.out.println("In child fun");
         }
@@ -20,13 +20,13 @@ class Child extends Parent{
 class Client{
         public static void main(String[] args){
                 Parent obj1=new Child();
-                obj1.fun(10);    
-//		obj1.fun();// error require int found no argument
+                obj1.fun();    
+		//obj1.fun(10);// error require no argument found int
 
    		Parent obj2=new Child();
-	//	obj2.fun(); //  require int found no 
-	//
+		obj2.fun(); // if parent fun require int and pass no argument so it also error 
+	
 		Child obj3=new Child();
-		obj2.fun(22);   // True it contains both parent(parameter) and child(no parameter) It goes to parent Fun(int x)
+		obj3.fun(22);   // child(no parameter) call
         }
 }
