@@ -5,7 +5,7 @@ class Check1{
 
 		str.append("Jgatap");  //change into str  
 		
-		System.out.println(System.identityHashCode(str)); // hash code is same
+		System.out.println(System.identityHashCode(str)); // hsh code is same
 		str.append(str);
 		System.out.println(str);
               //
