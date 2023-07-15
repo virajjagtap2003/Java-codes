@@ -2,23 +2,18 @@
 
 class Missing {
     public static void main(String[] args) {
-        int arr[] = {1,2, 3, 4,5,6, 8, 9, 10};
-        int arr1[] = new int[10];
-        int index = 0;
-        int no = 1;
-        
+        int arr[] = {10,9,8,6,7,3,5,4,1};
+        int sum=0;
+	int sum1=0;
+	int missing=0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]!=i+1) {
-               	 arr1[index]=arr[i];
-		 index++;
-		
-            }
-        }
-        
-        System.out.println("Display");
-        for (int i = 0; i < index; i++) {
-            System.out.println(arr1[i]);
-        }
-    }
+		sum=sum+arr[i];
+    	}
+ 
+	for(int i=1;i<=10;i++){
+		sum1=sum1+i;
+	}
+	missing=sum1-sum;
+	System.out.println("Missing number="+missing);
 }
-
+}
