@@ -11,6 +11,9 @@ class Mythread extends Thread{
 				System.out.println("In thread-0");
 		}
 	}
+	void fun(){
+		System.out.println("JAVA ");
+	}
 
 }
 class ThreadDemo{

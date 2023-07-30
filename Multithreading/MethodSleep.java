@@ -13,7 +13,7 @@ class Mythread extends Thread {
 		}catch(InterruptedException obj4){
 		}
 		System.out.println(Thread.currentThread());
-		// It shows Thread[Thread-0,5,main]==Thread-0(current thread)5(Default priority),main=running thread
+		// It shows Thread[Thread-0,5,Group]==Thread-0(current thread)5(Default priority),main=Group
 	}
 }
 class ThreadDemo{
@@ -29,7 +29,7 @@ class ThreadDemo{
 			
 		}
 		System.out.println(Thread.currentThread()); // getname shows here "main"
-		// It shows Thread[main,5,main]==main(current thread)5(Default priority),main=running thread
+		// It shows Thread[main,5,main]==main(current thread)5(Default priority),main=group
 		
 		// SetName method to set threadname
 		Thread.currentThread().setName("Viraj");
