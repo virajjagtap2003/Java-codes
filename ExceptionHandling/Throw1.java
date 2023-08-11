@@ -1,19 +1,19 @@
 // user defined example of stack overflow
 
 import java.util.*;
-class DataOverFlow extends RuntimeException{ // need to extends parent
+class DataOverFlowException extends RuntimeException{ // need to extends parent
 	 DataOverFlowException(String msg){
 		super(msg);  // when we written a msg here our class not print it here we need to pass to the parent class (Throwable) so use super
 	}
 }
-class DataUnderFlow extends RuntimeException{
+class DataUnderFlowException extends RuntimeException{
  	DataUnderFlowException(String msg){
 		super(msg);
 		
 	}
 }
 class Client{
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int arr[]=new int[5];
 		System.out.println("enter integer no betweeen 1 to 100");
